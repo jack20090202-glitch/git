@@ -1,0 +1,21 @@
+# OS / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# env & secrets
+.env
+.env.*
+.token
+*.pem
+*.key
+
+# dependency / build output (uncomment the ones you need)
+# node_modules/
+# dist/
+# __pycache__/
+# .venv/
+# *.log
