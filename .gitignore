@@ -1,21 +1,59 @@
-# OS / editor
+# ── 系统与编辑器垃圾 ──
 Thumbs.db
+ehthumbs.db
 Desktop.ini
+desktop.ini
 .DS_Store
+._*
+*.swp
+*.swo
+*~
 .idea/
 .vscode/
-*.swp
+*.sublime-workspace
 
-# env & secrets
+# ── 凭据与本地环境（绝不入库）──
 .env
 .env.*
+!.env.example
 .token
+.netrc
+.npmrc
 *.pem
 *.key
+*.pfx
+*.p12
 
-# dependency / build output (uncomment the ones you need)
-# node_modules/
-# dist/
-# __pycache__/
-# .venv/
-# *.log
+# ── Node ──
+node_modules/
+dist/
+.parcel-cache/
+coverage/
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ── Java / Maven / Gradle ──
+target/
+*.class
+.gradle/
+
+# ── Office 临时锁文件与备份 ──
+~$*
+*.tmp
+*.bak
+
+# ── 日志 ──
+*.log
+
+# 注：build/、bin/、obj/、*.zip、*.mp4 等是否该忽略取决于项目本身，
+#     默认不忽略，避免把正经目录（如脚本用的 bin/）误挡在外。
